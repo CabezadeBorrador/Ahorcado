@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Ahorcado!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>¡AHORCADO!</h1>
+    <p class="autor">por Cabeza de Borrador</p>
+
+    <div id="inicio">
+      <p>Escribe una palabra secreta:</p>
+      <input type="password" id="palabraInput" placeholder="Escribe aquí..." />
+      <button onclick="iniciarJuego()">Iniciar partida</button>
+    </div>
+
+    <div id="juego" style="display:none;">
+      <p class="palabra" id="palabra"></p>
+      <div id="teclado" class="teclado"></div>
+      <p id="intentos">Errores: 0/6</p>
+      <p id="mensajeFinal"></p>
+      <button onclick="reiniciar()">Nueva palabra</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
